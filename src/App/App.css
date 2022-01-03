@@ -1,0 +1,271 @@
+header{
+  background-image: url('../images/mobile/image-header.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 55rem;
+}
+.desktopMenu{
+  display: none;
+}
+header nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+  padding-top: 2rem;
+  position: relative;
+}
+.headerTitle{
+  margin-left:2rem ;
+  background-image: url('../images/logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 2.9rem;
+  width: 15rem;
+}
+.hamburgerMenu{
+  position: relative;
+  height: 2rem;
+  width: 2.5rem;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: unset;
+  border-right: unset;
+  outline: none;
+  cursor: pointer;
+  margin-right: 2rem;
+  background-color: transparent;
+  margin-bottom: 0.2rem;
+}
+.hamburgerMenu::before{
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:auto;
+  width: 2.5rem;
+  height: 1px;
+  background-color: white;
+}
+header h1{
+  text-align: center;
+  font-family:'Fraunces', serif ;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 0.6rem;
+  color: white;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+.arrowDown{
+  margin-top: 10.5rem;
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  height: 12rem;
+  width: 2.7rem;
+  
+}
+.egg{
+  width: 100%;
+  background-image: url('../images/mobile/image-transform.jpg');
+  background-size: auto 70%;
+  background-repeat: no-repeat;
+  height: 50rem;
+  background-attachment:fixed ;
+  background-position: bottom;
+  background-color: var(--Yellow);
+}
+.cup{
+  width: 100%;
+  background-image: url('../images/mobile/image-stand-out.jpg');
+  background-size: auto 70%;
+  background-repeat: no-repeat;
+  height: 50rem;
+  background-attachment:fixed ;
+  background-position: bottom;
+  background-color: var(--Softred);
+}
+.testimonialsTitle{
+  text-align: center;
+  font-size: 2rem;
+  color: var(--Grayish-blue);
+  font-family:'Fraunces', serif;
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+  padding: 7rem 0;
+  text-transform: uppercase;
+}
+
+.imgGallery{
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+}
+.imgGallery img{
+  width: 50%;
+}
+footer{
+  background-color: var(--Darkmoderate);
+  padding: 7rem 0;
+}
+
+.titleFooter{
+  display: block;
+  mask-image: url('../images/logo.svg');
+  background-color: var(--Darkdesaturated);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  height: 4rem;
+  width: 18rem;  
+  margin: 0 auto;
+}
+
+.footerNav{
+  display: flex;
+  width: 100%;
+  margin:0 auto;
+  margin-top: 4.5rem;
+  justify-content: space-around;
+  max-width: 53rem;
+
+}
+.footerNav a{
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: var(--Darkdesaturated);
+  outline: none ;
+}
+.footerNav a:focus{
+  color: white;
+}
+
+.footerIconContainer{
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 9rem;
+  max-width: 38rem;
+}
+
+.footerIconContainer a span{
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2.7rem;
+  height: 2.7rem;
+}
+.footerIconContainer a:nth-child(1) span{
+  mask-image: url('../images/icon-facebook.svg');
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  background-color: var(--Darkdesaturated);
+}
+.footerIconContainer a:nth-child(2) span{
+  mask-image: url('../images/icon-instagram.svg');
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  background-color: var(--Darkdesaturated);
+}
+.footerIconContainer a:nth-child(3) span{
+  mask-image: url('../images/icon-twitter.svg');
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  background-color: var(--Darkdesaturated);
+}
+.footerIconContainer a:nth-child(4) span{
+  mask-image: url('../images/icon-pinterest.svg');
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  background-color: var(--Darkdesaturated);
+}
+
+.footerIconContainer a span:hover{
+  background-color: white;
+}
+
+@media (min-width:1024px) {
+  header{
+    background-image: url('../images/desktop/image-header.jpg');
+  }
+  .desktopMenu{
+    display: block;
+    margin-right: 4rem;
+  }
+  .desktopMenu button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-left: 2.5rem;
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 3rem;
+  }
+  .desktopMenu button:hover{
+    background-color: white;
+    padding: 1.5rem 3rem;
+    font-family:'Fraunces', serif;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .hamburgerMenu{
+    display: none;
+  }
+  .egg{
+    background-image: url('../images/desktop/image-transform.jpg');
+    grid-area: egg;
+    background-attachment:local ;
+    background-size: cover;
+  }
+  .cup{
+    background-image: url('../images/desktop/image-stand-out.jpg');
+    background-attachment:local ;
+    background-size: cover;
+  }
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "info1 egg" ". ." ". ." "opinion opinion" "gallery gallery";
+  }
+  .testimonialsContainer{
+    grid-area: opinion;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .testimonialsTitle{
+    width: 100%;
+  }
+  .imgGallery{
+    width: 100%;
+    grid-area: gallery;
+  }
+  .imgGallery img{
+    width: 25%;
+  }
+}
+
+@media (min-width:1440px) {
+  .egg, .cup{
+    background-position: center;
+    height: 55rem;
+  }
+}
+
+@media (min-width:1840px) {
+  header{
+    height: 70rem;
+  }
+  .egg, .cup{
+    background-position: center;
+    height: 65rem;
+  }
+}

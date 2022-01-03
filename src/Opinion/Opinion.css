@@ -1,0 +1,49 @@
+.testimony{
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    align-items: center;
+    padding-bottom: 8rem;
+}
+
+.testimony img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.testimony .content{
+    width: 78%;
+    margin: 0 auto;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.8;
+    color: var(--Very-dark-grayish-blue);
+}
+
+.testimony div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimony h1{
+    font-family:'Fraunces', serif;
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+.testimony .job{
+    margin-top: 1.5rem;
+    color: var(--Grayish-blue);
+    font-size: 1.8rem;
+}
+
+@media (min-width:1024px) {
+    .testimony{
+        width: 33%;
+    }
+}
