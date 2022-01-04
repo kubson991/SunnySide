@@ -74,21 +74,21 @@ header h1{
 .egg{
   width: 100%;
   background-image: url('../images/mobile/image-transform.jpg');
-  background-size: auto 70%;
+  background-size: contain;
   background-repeat: no-repeat;
-  height: 50rem;
+  height: 28rem;
   background-attachment:fixed ;
-  background-position: bottom;
+  background-position: center;
   background-color: var(--Yellow);
 }
 .cup{
   width: 100%;
   background-image: url('../images/mobile/image-stand-out.jpg');
-  background-size: auto 70%;
+  background-size: contain;
   background-repeat: no-repeat;
-  height: 50rem;
+  height: 28rem;
   background-attachment:fixed ;
-  background-position: bottom;
+  background-position: center;
   background-color: var(--Softred);
 }
 .testimonialsTitle{
