@@ -74,20 +74,18 @@ header h1{
 .egg{
   width: 100%;
   background-image: url('../images/mobile/image-transform.jpg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 28rem;
-  background-attachment:fixed ;
   background-position: center;
   background-color: var(--Yellow);
 }
 .cup{
   width: 100%;
   background-image: url('../images/mobile/image-stand-out.jpg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 28rem;
-  background-attachment:fixed ;
   background-position: center;
   background-color: var(--Softred);
 }
@@ -221,15 +219,20 @@ footer{
     display: none;
   }
   .egg{
+    height: 100%;
     background-image: url('../images/desktop/image-transform.jpg');
     grid-area: egg;
-    background-attachment:local ;
-    background-size: cover;
+    background-attachment:fixed ;
+    background-size: 50%;
+    background-position: right;
   }
   .cup{
+    height: 100%;
     background-image: url('../images/desktop/image-stand-out.jpg');
-    background-attachment:local ;
-    background-size: cover;
+    background-attachment:fixed ;
+    background-size: contain;
+    background-position: left;
+    background-size: 50%;
   }
   main{
     display: grid;
@@ -254,8 +257,12 @@ footer{
 }
 
 @media (min-width:1440px) {
-  .egg, .cup{
-    background-position: center;
+  .egg{
+    background-position: right;
+    height: 55rem;
+  }
+  .cup{
+    background-position: left;
     height: 55rem;
   }
 }
@@ -265,7 +272,6 @@ footer{
     height: 70rem;
   }
   .egg, .cup{
-    background-position: center;
-    height: 65rem;
+    height: 70rem;
   }
 }
