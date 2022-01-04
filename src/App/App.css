@@ -189,7 +189,11 @@ footer{
 .footerIconContainer a span:hover{
   background-color: white;
 }
-
+@media (min-width:768px) {
+  .egg,.cup{
+    height: 55rem;
+  }
+}
 @media (min-width:1024px) {
   header{
     background-image: url('../images/desktop/image-header.jpg');
@@ -273,5 +277,11 @@ footer{
   }
   .egg, .cup{
     height: 70rem;
+  }
+  .testimonialsTitle{
+    font-size: 2.5rem;
+  }
+  header h1{
+    font-size: 4rem;
   }
 }

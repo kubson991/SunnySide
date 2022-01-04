@@ -49,7 +49,14 @@
     opacity: 0.3;
 }
 
-@media (min-width:1024px) {
-    .informationContainer{
+@media (min-width:1224px) {
+    .informationContainer h1{
+         font-size: 3.5rem;
     }
+    .informationContainer p{
+        font-size: 2.4rem;
+   }
+   .informationContainer a{
+    font-size: 2.1rem;
+}
 }
